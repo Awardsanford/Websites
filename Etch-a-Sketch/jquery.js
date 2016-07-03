@@ -1,19 +1,39 @@
-//Use jquery to create copies of squares that will make up our pixels
-
-//Create Grid
+//Use jquery to create a grid with copies of squares that will make up our pixels
 
 function createGrid() {
   $('#screen').html("");
 
-  for (i = 0; i < 3750; i++) {
-    $('#screen').append("<div class='square'></div>");
+  for (i = 0; i <= 2500; i++) {
+    $('#screen').append("<span class='square'></span>");
   }
 
-  //Mouseenter operation to draw
-  
-  $('.square').mouseenter(function() {
+  //hover operation to draw if mouse 
+  // is not clicked
 
+  $('.square').hover(function() {
+    curOp = parseFloat($(this).css('opacity'));
     $(this).addClass('highlighted');
+    if (curOp < .5) {
+      $(this).css('opacity', +.3)
+    }
+    if ((curOp <= .5) && (curOp >= .3)) {
+      $(this).css('opacity', curOp + .1);
+    }
+    //only draw when mouseup:
+  }, function(e) {
+    if (e.mouseup) {
+      curOp = parseFloat($(this).css('opacity'));
+      $(this).addClass('highlighted');
+      if (curOp < .5) {
+        $(this).css('opacity', +.3)
+      }
+      if ((curOp <= .5) && (curOp >= .3)) {
+        $(this).css('opacity', curOp + .1)
+      }
+    } else if (e.which == 1) {
+      curOp = parseFloat($(this).css('opacity'));
+      $(this).css('opacity', 0);
+    };
   });
 
 };

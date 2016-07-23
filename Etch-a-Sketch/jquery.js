@@ -1,34 +1,37 @@
-//Use jquery to create a grid with copies of squares that will make up our pixels
+//Create Pixels
 
-function createGrid() {
+function createGrid(screenSize, pixelSize) {
   $('#screen').html("");
-
-  for (i = 0; i <= 2500; i++) {
-    $('#screen').append("<span class='square'></span>");
+   for (var i = 0; i < screenSize; i++) {
+    $('.square').css({
+      'height': pixelSize + "px",
+      'width': pixelSize +  "px"
+                     });
+    $('#screen').append("<span class='square'></span>")
   }
-
+  
   //hover operation to draw if mouse 
   // is not clicked
 
   $('.square').hover(function() {
     curOp = parseFloat($(this).css('opacity'));
     $(this).addClass('highlighted');
-    if (curOp < .5) {
-      $(this).css('opacity', +.3)
+    if (curOp < .775) {
+      $(this).css('opacity', +.65)
     }
-    if ((curOp <= .5) && (curOp >= .3)) {
-      $(this).css('opacity', curOp + .1);
+    if ((curOp <= .775) && (curOp >= .65)) {
+      $(this).css('opacity', curOp + .025);
     }
-    //only draw when mouseup:
+    //Only draw when mouseup:
   }, function(e) {
     if (e.mouseup) {
       curOp = parseFloat($(this).css('opacity'));
       $(this).addClass('highlighted');
-      if (curOp < .5) {
-        $(this).css('opacity', +.3)
+      if (curOp < .775) {
+        $(this).css('opacity', +.65)
       }
-      if ((curOp <= .5) && (curOp >= .3)) {
-        $(this).css('opacity', curOp + .1)
+      if ((curOp <= .775) && (curOp >= .65)) {
+        $(this).css('opacity', curOp + .025)
       }
     } else if (e.which == 1) {
       curOp = parseFloat($(this).css('opacity'));
@@ -44,9 +47,9 @@ $('#clear').click(function(button) {
   $('.highlighted').animate({
     opacity: 0
   }, 1000);
-  shake('#device');
+  $(shake('#device'));
   setTimeout(function() {
-    $(createGrid);
+    createGrid(screenSize, pixelSize);
   }, 1000);
 
 });
@@ -65,7 +68,42 @@ function shake(div) {
   }
   $(div).animate({
     left: 0
-  }, interval);
+  }, interval).stopPropagation();
 }
 
-$(createGrid);
+//Toggle resolution menu
+
+$('#resolution').click(function(button) {
+  $(this).toggleClass('clicked');  
+  if ($(this).hasClass('clicked')) {
+    $('#res-container').show()
+      } else {
+    $('#res-container').hide();
+    
+  }
+})
+
+$('.low').click(function(label){
+  
+   createGrid(385,29)
+})
+
+$('.med').click(function(label){
+  
+ createGrid(1014,17)
+ 
+})
+
+$('.high').click(function(label){
+	createGrid(2500,10)
+})
+
+$('.custom').click(function(label){
+input("Please enter in pixel size")
+
+	createGrid;
+})
+
+//Create grid on load
+
+$(createGrid(1014, 17))

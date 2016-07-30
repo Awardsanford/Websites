@@ -1,15 +1,15 @@
 //Create Pixels
 
 function createGrid(screenSize, pixelSize) {
-  $('#screen').html("");
-   for (var i = 0; i < screenSize; i++) {
-    $('.square').css({
+  var newHtml = '';
+  for (var i = 0; i < screenSize; i++) {
+    newHtml = newHtml + "<span class='square'></span>";
+  }
+   $('#screen').html(newHtml);
+   $('.square').css({
       'height': pixelSize + "px",
       'width': pixelSize +  "px"
-                     });
-    $('#screen').append("<span class='square'></span>")
-  }
-  
+    });
   //hover operation to draw if mouse 
   // is not clicked
 
@@ -38,6 +38,8 @@ function createGrid(screenSize, pixelSize) {
       $(this).css('opacity', 0);
     };
   });
+  
+  console.log('3');
 
 };
 

@@ -4,6 +4,7 @@
 	color: #FFD700;
 	font-style: italic;
 }
+
 #device{
 	background-color: red;
 	height: 660px;
@@ -12,6 +13,7 @@
 	box-shadow: inset 0 0 5px black;
 	border-radius: 20px;
 }
+
 #screen{
 	background: #D3D3D3;
 	height: 500px;
@@ -26,9 +28,11 @@
 	border-radius: 20px;
 	box-shadow: inset 0 0 5px black;
 }
+
 span{
 	font-size: 25px;
 }
+
 #button-left {
 	background-color: white;
 	width: 65px;
@@ -40,6 +44,7 @@ span{
 	left: 3%;
   box-shadow: inset 0 0 5px black;
 }
+
 #button-right {
 	background-color: white;
 	border-radius: 65px;
@@ -51,12 +56,14 @@ span{
 	bottom: 3%;
   box-shadow: inset 0 0 5px black;
 }
+
 .highlighted {
 }
 
 #highlight {
   background: #8e8e8e;
 }
+
 #clear {
   margin: center;
   height: 30px;
@@ -94,8 +101,6 @@ span{
 .erase {
 	opacity: 100;
 }
-
-
 
 #resolution {
   margin: center;
@@ -135,7 +140,6 @@ span{
   position: absolute;
   display: none;
  
-  
 }
 
   #resbutton {
@@ -157,4 +161,6 @@ span{
   clear: both;
   float: left;
   display: inline-block;
+ 
+  
 }

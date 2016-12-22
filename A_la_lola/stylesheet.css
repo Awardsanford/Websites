@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;  
+}
+
+#section{
+  margin: auto;
+  float: left;
+}
+
+#container{
+  display: -webkit-flex;
+  height: 300px;
+  width: 1010px;
+  position: relative;
+  top: 20%;
+  background-color: grey;
+  margin: auto;
+}
+
+#choice1{
+  float: left;
+  text-align: left;
+  position: relative;
+  margin: auto;
+  height: 200px;
+  width: 150px;
+  clear: both;
+  display: inline-block;
+  
+ 
+  
+}
+
+#choice2{
+  float: left;
+  text-align: left;
+  position: relative;
+display: inline-block;
+  clear: both;
+  margin: auto;
+  height: 200px;
+  width: 150px;
+  clear: both;
+ 
+  
+}
+
+
+#choice3{
+  float: left;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  height: 200px;
+  width: 150px;
+  clear: both;
+  margin: auto;
+ 
+  
+}
+
+#total {
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  
+}

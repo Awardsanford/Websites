@@ -1,11 +1,19 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <title>a la Lola</title>
 </head>
 
+<body>
 
-  <? php
+<link rel="stylesheet" type="text/css" href=stylesheet.css>
+
+  
+  <h1>A La Lola</h1>
+
+    <div>
+
+  <?php
 	$dom = new DomDocument();
 	$dom->load("menu.xml");
 
@@ -30,10 +38,51 @@
 		@$pepperonis_small = $pizza->getElementsByTagName("pepperoni_small");
 		@$pepperoni_small = $pepperonis_small->item(0)->nodeValue;
 
-		echo "$tomato_and_cheese_large  $tomato_and_cheese_small  $bacon_large  $bacon_small\n";
+		echo "$tomato_and_cheese_large\n";
 	}
 
 	?>
+</div>
+  
+  <section id="container">
+  
+  <div id="choice1">
+      
+	<input type="radio" name="choice1" value="pizza">Pizza<br>
+       <label>
+        <input type="radio" name="pizza" id="pizza">Tomato and Cheese<br>
+        <input type="radio" name="pizza" id="pizza">Bacon<br>
+        <input type="radio" name="pizza" id="pizza">Pepperoni<br>
+      </label>
+  
+    </div>
+	
+<div id="choice2">
+	<input type="radio" name="choice2" value="calzone">Ziti<br>
+  <label>
+        <input type="radio" name="calzone" id="calzone">With Sauce<br>
+        <input type="radio" name="calzone" id="calzone">With Meatball<br>
+        <input type="radio" name="calzone" id="calzone">With Chicken<br>
+  </label>
+  
+  
+  </div>
+	
+	<div id="choice3">
+	<input type="radio" name="choice3" value="grinder">Grinder<br>
+  <label>
+        <input type="radio" name="grinder" id="grinder">Hamburger<br>
+        <input type="radio" name="grinder" id="grinder">Steak<br>
+        <input type="radio" name="grinder" id="grinder">Chicken Fingers<br>
+  </label>
+  
+  
+  </div>
+    <div id="total">
+  <input type="text" value="<?php echo "$tomato_and_cheese_large\n"; ?>">$Total
+  </input>
+  </section>
+
 
 </body>
 

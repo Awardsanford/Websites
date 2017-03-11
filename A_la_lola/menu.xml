@@ -1,31 +1,26 @@
 <menu>
-	<pizzas>
-<pizza>
 
-	<tomato_and_cheese_large>
-		<price>9.75</price>
-		</tomato_and_cheese_large>
-		<tomato_and_cheese_small>
-		<price>5.50</price>
-		</tomato_and_cheese_small>		
+<pizzas>
+
+	<pizza id ="tomato_and_cheese">
+		<large>9.75</large>
+		<small> 5.50</small>
+		
 	</pizza>
 
-	<pizza> 
-	<bacon_large>
-		<price>10.85</price>
-		</bacon_large>
-		<bacon_small>
-		<price>6.85</price>
-	</bacon_small>
+	<pizza id="bacon"> 
+	
+		<large>10.85</large>
+		
+		<small>6.85</small>
+	
 </pizza>
 
-<pizza>
-	<pepperoni_large>
-		<price>10.85</price>
-		</pepperoni_large>
-		<pepperoni_small>
-		<price>6.85</price>
-		</pepperoni_small>
+<pizza id="pepperoni">
+
+
+		<large>10.85</large>
+		<small>6.85</small>
 </pizza>
 
 </pizzas>
@@ -67,8 +62,3 @@
 		</grinder_with_chicken_finger_small>
 </grinder>
 </menu>
-
-
-
-
-

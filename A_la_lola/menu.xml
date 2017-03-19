@@ -1,29 +1,23 @@
 <?xml version="1.0"?>
-<pizzas>
-	<pizza number="0">
-		<type>tomato and cheese</type>
-		<sizes>
-		<size name="large">9.75</size>
-		<size name="small"> 5.50</size>
-		</sizes>
-	</pizza>
+<menu>
+<category name="Pizzas">
+	<item number="0" name="Tomato &amp; Cheese">
+		
+		<size type="large">9.75</size>
+		<size type="small"> 5.50</size>
+		</item>
 
-	<pizza number="1">
-	<type>bacon</type> 
-	<sizes>
-		<size name="large">10.85</size>
-		<size name="small">6.85</size>
-	</sizes>
-</pizza>
+	<item name="Bacon"> 
+	
+		<size type="large">10.85</size>
+		<size type="small">6.85</size>
+	</item>
 
-<pizza number="2">
+	<item name="Pepperoni">
 
-	<type>pepperoni</type>
-	<sizes>
+		<size type="large">10.85</size>
+		<size type="small">6.85</size>
+</item>
+</category>
 
-		<size name="large">10.85</size>
-		<size name="small">6.85</size>
-	</sizes>
-</pizza>
-
-</pizzas>
+</menu>

@@ -20,12 +20,29 @@
 
 <body>
 
+
 <ul>
 <?php
 $dom = simplexml_load_file("menu.xml");
-foreach ($dom->xpath("/pizzas/pizza") as $pizza){
+foreach ($dom->xpath("/menu/category/item") as $pizza)
+{
   print "<li>";
-  print $pizza->type;
+  print "Large " . $pizza["name"] . ": ";
+  print $pizza->size;
+  print "</li>";
+}
+?>
+</ul>
+
+<ul>
+<?php
+$dom = simplexml_load_file("menu.xml");
+foreach ($dom->xpath("/menu/category/item/size[@type='small']") as $size);
+foreach ($dom->xpath("/menu/category/item") as $pizza)
+{
+  print "<li>";
+  print "Small " . $pizza["name"] . ": ";
+  print $size;
   print "</li>";
 }
 ?>
@@ -33,8 +50,8 @@ foreach ($dom->xpath("/pizzas/pizza") as $pizza){
 
 
 
-
   
+   
   
   <h1 style="font-size: 40px">A La Lola</h1>
   
@@ -82,15 +99,23 @@ foreach ($dom->xpath("/pizzas/pizza") as $pizza){
           <option value="8">8</option>
           <option value="9">9</option>
         </select>
-        
-         
-        <label>
-        <input type="text" name="price" style="width: 90px" style="text-align: right">
-        </label>
-        <button id="order">add to order</button>
-        </input> 
 
-      </input>
+
+     <?php
+$dom = simplexml_load_file("menu.xml");
+foreach ($dom->xpath("/menu/category[@name='Pizzas']/item[@name='Tomato & Cheese']/size[@type='small']") as $sizesmall);
+{
+ 
+  print "<input type='text' value='" . $sizesmall . "' name='price' style='text-align: right'>";
+
+}
+?>
+        
+     
+        <button id="order">add to order</button>
+       
+
+      
     </div>
       </div>
  

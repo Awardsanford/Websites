@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <menu>
 <category name="Pizzas">
+<<<<<<< HEAD
 	<item name="Tomato &amp; cheese">
+=======
+	<item number="0" name="Tomato &amp; Cheese">
+>>>>>>> 961fd928a2b8d312ec63293f4c5bc065c1af9988
 		
 		<size type="large">9.75</size>
 		<size type="small"> 5.50</size>

@@ -138,10 +138,17 @@ h1 {
   bottom: 10%;
   right: 1%;
   position: absolute;
+<<<<<<< HEAD
   
   
   
   
+=======
+  
+  
+  
+  
+>>>>>>> 961fd928a2b8d312ec63293f4c5bc065c1af9988
 }
 
 #pizza_choice{
@@ -173,4 +180,8 @@ margin: 0px;
   float:left;
   display: inline-block;
   margin-top: 3px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 961fd928a2b8d312ec63293f4c5bc065c1af9988

@@ -7,64 +7,170 @@ h1 {
   float: left;
 }
 
+#total_container{
+  height: 300px;
+    background-color: blue;
+  position: relative;
+    width: 930px;
+  margin: auto;
+  border: solid;
+}
+
+#sidebar{
+  display: -webkit-flex;
+  height: 300px;
+  width: 130px;
+  position: relative;
+  float: left;
+  background-color: grey;
+  margin: auto;
+  display: inline-block;
+  
+  
+}
+
 #container{
   display: -webkit-flex;
   height: 300px;
-  width: 1010px;
-  position: relative;
-  top: 20%;
+  width: 800px;
+  position: absoulte;  
   background-color: grey;
   margin: auto;
-}
-
-#choice1{
-  float: left;
-  text-align: left;
-  position: relative;
-  margin: auto;
-  height: 200px;
-  width: 150px;
-  clear: both;
-  display: inline-block;
-  
- 
   
 }
 
-#choice2{
-  float: left;
-  text-align: left;
+#container2{
+  height: 300px;
+  width: 620px;
+  background-color: #C8C8C8;  
   position: relative;
-display: inline-block;
-  clear: both;
-  margin: auto;
-  height: 200px;
-  width: 150px;
-  clear: both;
- 
-  
+  border: solid;
+    border-top: none;
 }
 
 
-#choice3{
-  float: left;
-  text-align: left;
-  position: relative;
+  #price {
+    width: 10px;
+    font-size: 14px;
+    padding-top: 11px;
+    
+    
+   
+    
+   
+  
+}
+
+#pizza_button{
+  font-size: 28px;
   display: inline-block;
   margin: auto;
-  height: 200px;
-  width: 150px;
-  clear: both;
+  display: center;
+  background-color: #c8c8c8;
+  
+}
+
+#ziti_button{
+  font-size: 28px;
+  display: inline-block;
   margin: auto;
- 
+  display: center;
+  background-color: #c8c8c8;
+}
+
+#grinder_button{
+  font-size: 28px;
+  display: inline-block;
+  margin: auto;
+  display: center;
+  background-color: #c8c8c8;
+}
+
+.sidebar_button{
+  font-size: 28px;
+  display: inline-block;
+  margin: auto;
+  display: center;
+  background-color: #c8c8c8;
+}
+
+#hide_pizza{
+  
+  font-size: 28px;
+  height: 300px;
+  width: 620px;
+  background-color: purple;
+  display: none;
+  overflow: hidden;
+  margin: left;
+  line-height: 1.5;
+  
+}
+  #hide_ziti{
+ font-size: 28px;
+  height: 300px;
+  width: 620px;
+  background-color: purple;
+  display: none;
+  overflow: hidden;
+  margin: left;
+  line-height: 1.5;
+}
+
+#hide_grinder{
+  
+  font-size: 28px;
+  height: 300px;
+  width: 620px;
+  background-color: purple;
+  display: none;
+  overflow: hidden;
+  margin: left;
+  line-height: 1.5;
+}
+
+#order{
   
 }
 
 #total {
-  margin: auto;
-  display: inline-block;
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
   
+  bottom: 10%;
+  right: 1%;
+  position: absolute;
+  
+  
+  
+  
+}
+
+#pizza_choice{
+  display: none;
+}
+
+#options_container{
+  height: 40px;
+  width: 600px;
+  
+  
+  position: relative;
+  float: right;
+margin: 0px;
+}
+
+#option_values{
+  margin-right: 20px;
+  text-align:right;
+  display: inline-block;
+  text
+  position: relative;
+  right: 0%;
+  float: right;
+}
+
+#heading{
+  text-align: left;
+  float:left;
+  display: inline-block;
+  margin-top: 3px;
 }

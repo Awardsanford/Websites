@@ -1,0 +1,39 @@
+Git notes:
+In directory, run git init
+git status shows you status of files to be committed
+git add xxx where xxx if the file name
+git status here will show you files that would be added.
+git diff xxx will show you the differences in your current staged file and the working copy.
+
+In summation:
+
+git init
+
+git status
+
+git add
+
+git diff
+
+git commit
+
+git log
+
+
+Useful to know:
+
+git show HEAD
+
+git reset HEAD xxx <!-- where xxx is a previous commit SHA code, as shown in the git log step -->
+
+Branching:
+
+git branch 
+(tells you what version you're working on)
+
+git branch new_branch
+(where new_branch is the new branch's name)
+
+git checkout new_branch
+(switch to the new branch)
+

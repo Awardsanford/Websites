@@ -1,76 +1,23 @@
+<?xml version="1.0"?>
 <menu>
-	<pizzas>
-<pizza>
+<category name="Pizzas">
+	<item name="Tomato &amp; cheese">
+		
+		<size type="large">9.75</size>
+		<size type="small"> 5.50</size>
+		</item>
 
-	<tomato_and_cheese_large>
-		<price>9.75</price>
-		</tomato_and_cheese_large>
-		<tomato_and_cheese_small>
-		<price>5.50</price>
-		</tomato_and_cheese_small>		
-	</pizza>
-
-	<pizza> 
-	<bacon_large>
-		<price>10.85</price>
-		</bacon_large>
-		<bacon_small>
-		<price>6.85</price>
-	</bacon_small>
-</pizza>
-
-<pizza>
-	<pepperoni_large>
-		<price>10.85</price>
-		</pepperoni_large>
-		<pepperoni_small>
-		<price>6.85</price>
-		</pepperoni_small>
-</pizza>
-
-</pizzas>
-
-<ziti_with_sauce>
-	<price>5.40</price>
-	</ziti_with_sauce>
-
-	<ziti_with_meatball>
-	<price>6.45</price>
-	</ziti_with_meatball>
-
-	<ziti_with_chicken>
-	<price>7.25</price>
-	</ziti_with_chicken>
-
-</ziti>
-
-<grinder>
-
-	<grinder_with_hamburger_large>
-		<price>4.95</price>
-		</grinder_with_hamburger_large>
-		<grinder_with_hamburger_small>
-		<price>4.50</price>
-		</grinder_with_hamburger_small>
+	<item name="Bacon"> 
 	
+		<size type="large">10.85</size>
+		<size type="small">6.85</size>
+	</item>
 
-	<grinder_with_steak_large>
-		<price>6.40</price>
-		</grinder_with_steak_large>
-		<grinder_with_steak_small>
-		<price>5.40</price>
-		</grinder_with_steak_small>
+	<item name="Pepperoni">
 
-	<grinder_with_chicken_finger_large>
-		<price>5.60</price>
-		</grinder_with_chicken_finger_large>
-		<grinder_with_chicken_finger_small>
-		<price>4.60</price>
-		</grinder_with_chicken_finger_small>
-</grinder>
+		<size type="large">10.85</size>
+		<size type="small">6.85</size>
+</item>
+</category>
+
 </menu>
-
-
-
-
-

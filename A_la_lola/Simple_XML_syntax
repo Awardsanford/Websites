@@ -1,0 +1,9 @@
+$dom = simplexml_load_file("http://feed")
+for each ($dom->channel->item as &item)
+{
+	print "<li>";
+	print "<h href='{item->link}'>";
+	print $item->title;
+	print "</a>";
+	print "</li>";
+}

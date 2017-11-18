@@ -1,0 +1,7 @@
+Git notes:
+
+
+In directory, run git init
+git status shows you status of files to be committed
+git add xxx where xxx if the file name
+git status here will show you files that would be added

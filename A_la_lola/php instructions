@@ -1,0 +1,14 @@
+php instructions
+
+
+download php files via google
+
+put into folder c:\php
+
+open command prompt, cd c:\php
+
+On Browser:
+
+http://localhost:8000/a_la_lola/index.php
+
+Or similar

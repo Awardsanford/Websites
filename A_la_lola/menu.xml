@@ -1,27 +1,23 @@
 <?xml version="1.0"?>
 <menu>
 <category name="Pizzas">
-<<<<<<< HEAD
-	<item name="Tomato &amp; cheese">
-=======
-	<item number="0" name="Tomato &amp; Cheese">
->>>>>>> 961fd928a2b8d312ec63293f4c5bc065c1af9988
-		
-		<size type="large">9.75</size>
-		<size type="small"> 5.50</size>
+
+	<item name="Tomato and cheese">
+
+		<size type="large"><price>9.75</price></size>
+		<size type="small"><price>5.50</price></size>
 		</item>
 
-	<item name="Bacon"> 
-	
-		<size type="large">10.85</size>
-		<size type="small">6.85</size>
+	<item name="Bacon"> 	
+		<size type="large"><price>10.85</price></size>
+		<size type="small"><price>6.85</price></size>
 	</item>
 
 	<item name="Pepperoni">
-
-		<size type="large">10.85</size>
-		<size type="small">6.85</size>
+		<size type="large"><price>10.86</price></size>
+		<size type="small"><price>6.86</price></size>
 </item>
 </category>
 
 </menu>
+

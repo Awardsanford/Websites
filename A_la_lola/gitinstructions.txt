@@ -1,4 +1,22 @@
 Git notes:
+
+CD into directory you want Websites to be in
+
+Run:
+
+git clone https://github.com/awardsanford/Websites/
+
+Make changes, then:
+
+git add -A
+
+git commit -m "Made Changes, etc"
+
+git push origin master
+
+
+
+
 In directory, run git init
 git status shows you status of files to be committed
 git add xxx where xxx if the file name
